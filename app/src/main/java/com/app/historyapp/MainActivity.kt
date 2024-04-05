@@ -19,28 +19,39 @@ class MainActivity : AppCompatActivity() {
 
         btnGenerate.setOnClickListener {
 
-            val age= etAge.toString().toInt()
+        //Code Attribution
+        //This method was taken from
+        //https://www.tutorialsfreak.com/kotlin-tutorial/kotlin-conditional-statements
+        // Tutorialsfreak
 
-            if (age >=  20) {
-                "Steve Irwin passed on at the age of 44."
-            } else if(age >= 30) {
-                "Ryan Cox passed on at the age of 28."
-            } else if (age >= 40) {
-                "Heath Ledger passed on at the age of 28."
-            } else if (age >= 50) {
-                "Michael Jackson passed on at the age of 50."
-            } else if (age >= 60) {
-                "Gregory Isaacs passed on at the age of 59."
-            } else if (age >= 70) {
-                "Elizabeth Taylor passed on at the age of 79."
-            } else if (age >= 80) {
-                "Whitney Houston passed on at the age of 48."
-            } else if (age >= 90) {
-                "Paul Walker passed on at the age of 40."
-            } else if (age >= 100) {
-                "Maya Angelou passed on at the age of 86."
-            }else{
-                tvResponse.text = "You have entered an invalid value."
+        // Code Attribution
+        // This Method was taken from
+        //https://stackoverflow.com/questions/3307090/how-to-add-background-image-to-activity
+        // Sephy
+        // https://stackoverflow.com/users/263521/sephy
+
+            if (etAge.toString().toInt() ==  44) {
+                tvResponse.text = "${etAge.toString().toInt()} Steve Irwin was an Austrailian zookeeper."
+            } else if(etAge.toString().toInt() == 28) {
+              tvResponse.text =  "${etAge.toString().toInt()} Heath Ledger was an Austrailian actor."
+            } else if ( etAge.toString().toInt() == 50) {
+                tvResponse.text =  "${etAge.toString().toInt()} Michael Jackson was an American singer and dancer."
+            } else if (etAge.toString().toInt() == 79) {
+                tvResponse.text = "${etAge.toString().toInt()} Elizabeth Taylor was an British-American actress."
+            } else if ( etAge.toString().toInt() == 86) {
+                tvResponse.text = "${etAge.toString().toInt()} Maya Angelou was an American memoirist and poet."
+            } else if (etAge.toString().toInt() == 95) {
+                tvResponse.text =  "${etAge.toString().toInt()} Nelson R. Mandela was the first president of South Africa."
+            } else if (etAge.toString().toInt() == 44) {
+                tvResponse.text =   "${etAge.toString().toInt()} Paul Walker was an American actor."
+            } else if (etAge.toString().toInt() == 99) {
+                tvResponse.text =   "${etAge.toString().toInt()} Prince Phillip was the Duke of Edinburgh."
+            } else if (etAge.toString().toInt() == 102) {
+                tvResponse.text =   "${etAge.toString().toInt()} Elizabeth Bowes-Lyon was the British Queen Mother."
+            }else if (etAge.toString().toInt() == 60){
+                tvResponse.text = "${etAge.toString().toInt()} Theodore Roosevelt was an American president ."
+            } else {
+                tvResponse.text = "You have entered an invalid value"
             }
 
 
